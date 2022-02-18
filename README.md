@@ -8,17 +8,17 @@ A baseline application harness combining React and Rollup, adapted from *https:/
 Clone this repository and install its dependencies:
 
 ```bash
-git clone https://github.com/rollup/rollup-starter-app
-cd rollup-starter-app
+git clone https://github.com/idearat/react-rollup-base
+cd react-rollup-base
 npm install
 
 # or
-npx degit "rollup/rollup-starter-app" my-app
+npx degit "idearat/react-rollup-base" my-app
 cd my-app
 npm install
 ```
 
-The `public/index.html` file contains a `<script src='bundle.js'>` tag, which means we need to create `public/bundle.js`. The `rollup.config.js` file tells Rollup how to create this bundle, starting with `src/main.js` and including all its dependencies, including [date-fns](https://date-fns.org).
+The `public/index.html` file contains a `<script src='bundle.js'>` tag, which means we need to create `public/bundle.js`. The `rollup.config.js` file tells Rollup how to create this bundle, starting with `src/main.js` and including all its dependencies.
 
 `npm run build` builds the application to `public/bundle.js`, along with a sourcemap file for debugging.
 
