@@ -1,0 +1,33 @@
+{
+  "name": "dt-cvm-shell",
+  "version": "0.0.1",
+  "description": "Simple test harness for DT CVM data/event push to GK POS",
+  "main": "main.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "dev": "npm-run-all --parallel start watch",
+    "start": "serve public"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "serve": "^13.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/preset-react": "^7.12.13",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-replace": "^2.3.4",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.67.2",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-serve": "^1.1.0"
+  }
+}
